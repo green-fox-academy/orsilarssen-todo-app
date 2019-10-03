@@ -11,8 +11,12 @@ const fs = require('fs');
 
 const args: string[] = process.argv;
 
+let fileContent: string='';
+
+let readStuff: string = fs.readFileSync('emptylist.txt', fileContent='');
+
 export let emptylist = () => {
-  if (args[2] == '-l') {
+  if (args[2] == '-l' && readStuff.length==0) {
     console.log('No todos for today! :-)');
   } else {
     console.log('$ todo \n Command Line Todo application \n ============================= \n Command line arguments: \n -l   Lists all the tasks \n -a   Adds a new task \n -r   Removes an task \n -c   Completes an task');
