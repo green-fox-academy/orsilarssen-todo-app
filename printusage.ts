@@ -1,6 +1,6 @@
 'use strict'
 
-const fs = require('fs'); // for writing into files (don't forget to use npm i @types/node)
+const fs = require('fs'); 
 
 const args: string[] = process.argv;
 
