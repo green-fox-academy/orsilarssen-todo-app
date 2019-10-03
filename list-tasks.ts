@@ -21,7 +21,7 @@ const args: string[] = process.argv;
 
 export let listTasks = () => {
   if (args[2] == '-l') {
-    console.log(fs.readFileSync('todotasks.txt', 'utf-8'));
+    console.log(fs.readFileSync('tasklist.txt', 'utf-8'));
   } else {
     console.log('$ todo \n Command Line Todo application \n ============================= \n Command line arguments: \n -l   Lists all the tasks \n -a   Adds a new task \n -r   Removes an task \n -c   Completes an task');
   }
